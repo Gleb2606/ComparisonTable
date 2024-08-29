@@ -1,0 +1,27 @@
+﻿<Window x:Class="WPFAPP.AddParameterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Добавить Параметр" Height="600" Width="400">
+    <Grid>
+        <StackPanel>
+            <Label>Категория</Label>
+            <TextBox x:Name="CategoryTextBox" Margin="10"/>
+            <Label>Наименование</Label>
+            <TextBox x:Name="NameTextBox" Margin="10"/>
+            <Label>Единица измерения</Label>
+            <TextBox x:Name="UnitTextBox" Margin="10"/>
+            <Label>Ссылка до класса</Label>
+            <TextBox x:Name="ClassLinkTextBox" Margin="10"/>
+            <Label>Класс</Label>
+            <TextBox x:Name="ClassTextBox" Margin="10"/>
+            <Label>Атрибут</Label>
+            <TextBox x:Name="AttributeTextBox" Margin="10"/>
+            <Label>Родительский класс</Label>
+            <TextBox x:Name="ParentClassTextBox" Margin="10"/>
+            <Label>Примечание</Label>
+            <TextBox x:Name="NoteTextBox" Margin="10"/>
+            <Button Content="Добавить" Click="AddButton_Click" Margin="10"/>
+        </StackPanel>
+    </Grid>
+</Window>
+

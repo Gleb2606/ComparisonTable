@@ -1,0 +1,37 @@
+﻿<Window x:Class="WPFAPP.FilterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFAPP"
+        mc:Ignorable="d"
+        Title="Фильтр" Height="650" Width="400">
+    <Grid>
+        <StackPanel Orientation="Vertical" Margin="10">
+            <Label>Наименование раздела</Label>
+            <TextBox x:Name="SectionFilterTextBox" Width="350" Margin="5"/>
+            <Label>Наименование Подраздела</Label>
+            <TextBox x:Name="SubsectionFilterTextBox" Width="350" Margin="5"/>
+            <Label>Категория параметра</Label>
+            <TextBox x:Name="CategoryFilterTextBox" Width="350" Margin="5"/>
+            <Label>Наименование параметра</Label>
+            <TextBox x:Name="NameFilterTextBox" Width="350" Margin="5"/>
+            <Label>Единица измерения</Label>
+            <TextBox x:Name="UnitFilterTextBox" Width="350" Margin="5"/>
+            <Label>Ссылка от оборудования до класса</Label>
+            <TextBox x:Name="LinkFilterTextBox" Width="350" Margin="5"/>
+            <Label>Класс</Label>
+            <TextBox x:Name="ClassFilterTextBox" Width="350" Margin="5"/>
+            <Label>Атрибут</Label>
+            <TextBox x:Name="AttributeFilterTextBox" Width="350" Margin="5"/>
+            <Label>Класс от которого наследуется аттрибут</Label>
+            <TextBox x:Name="ParentFilterTextBox" Width="350" Margin="5"/>
+            <Label>Примечание</Label>
+            <TextBox x:Name="NoteFilterTextBox" Width="350" Margin="5"/>
+
+            <Button Content="Применить фильтр" Click="ApplyFilter_Click" Margin="5"/>
+            <Button Content="Отмена" Click="Cancel_Click" Margin="5"/>
+
+        </StackPanel>
+    </Grid>
+</Window>
